@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Fill me with text</title>
+        <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <link rel="stylesheet" href="/main.css" type="text/css" />
+    </head>
+    <body>
+        <!--<div id="container">-->
+            
+            <header class="mdc-top-app-bar">
+              <div class="mdc-top-app-bar__row">
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                  <!--<a href="#" class="material-icons mdc-top-app-bar__navigation-icon">menu</a>-->
+                  <span class="mdc-top-app-bar__title">Get Silly Text</span>
+                </section>
+              </div>
+            </header>
+            <div class="mdc-top-app-bar--fixed-adjust">
+                <div class="filler-text"></div>
+                
+                <form>
+                    <div class="mdc-select">
+                        <label for="text-type" class="mdc-floating-label"> text type</label>
+                        <select name="text-type" id="text-type" class="mdc-select__native-control" required>
+                            <option value="gibberish">English gibberish</option>
+                            <option value="latin">Latin gibberish</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mdc-select">
+                        <label for="element" class="mdc-floating-label">element type</label>
+                        <select name="element" id="element" class="mdc-select__native-control" required>
+                            <option value='h1'>heading</option>
+                            <option value='p'>paragraph</option>
+                            <option value='ul'>unordered list</option>
+                            <option value='ol'>ordered list</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mdc-text-field">
+                        <label for="number-of-elements" class="mdc-floating-label">number of elements</label>
+                        <input 
+                            type="text"
+                            name='number-of-elements' 
+                            id="number-of-elements" 
+                            class="mdc-text-field__input">
+                            <div class="mdc-line-ripple"></div>
+                    </div>
+                    
+                    <div class="mdc-text-field">
+                        <label for="max-words" class="mdc-floating-label">max words</label>
+                        <input type="number" name="max-words" id="max-words" class="mdc-text-field__input" required>
+                    </div>
+                    
+                    <div class="mdc-text-field">
+                        <label for="min-words" class="mdc-floating-label">min words</label>
+                        <input type="number" name="min-words" id="min-words" class="mdc-text-field__input" required>
+                    </div>
+                    <button class="mdc-button get-text-button">get text</button>
+                </form>
+                
+                        
+            </div>
+            
+        <!--</div>-->
+        <script type="text/javascript" src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <script type="text/javascript" src="/app.js"></script>
+    </body>
+</html>
